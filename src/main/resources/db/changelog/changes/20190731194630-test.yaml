@@ -1,0 +1,31 @@
+databaseChangeLog:
+- changeSet:
+    id: 1564595197245-1
+    author: woodyr (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              primaryKeyName: user_settingPK
+            name: id
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+            name: daily_availability_lower_threshold
+            type: INT
+        - column:
+            constraints:
+              nullable: false
+            name: email
+            type: VARCHAR(255)
+        - column:
+            constraints:
+              nullable: false
+            name: other
+            type: VARCHAR(255)
+        tableName: user_setting
+
